@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style type="text/css">
+      body{
+          background-image: url(images/photo23.jpg);
+          background-size: cover;
+          background-attachment: fixed;
+      }
+      .container{
+          background-color: whitesmoke;
+      }
+
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Grade-predictor</title>
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Grade Predictor</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">How to use</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="container my-4 px-0">
+    <div class="shadow p-5">  <!-- style="width: 600px;--> 
+        
+    <div class="form-group">
+        <label for="Course-name">Course name</label>
+        <input type="text" class="form-control" id="course" >
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Credit</label>
+      <input type="credit" class="form-control" id="credit">
+    </div>
+    <button type="submit" class="btn btn-primary" id="add">Submit</button>
+    <button class="btn btn-primary" id="clearstorage" onclick="clearStorage()">Clear List</button>
+    </div>
+    </div>
+
+    <div class="container my-4 py-3">
+      <h2>Your Items</h2>
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">Sno</th>
+            <th scope="col">Course</th>
+            <th scope="col">Credit</th>
+            <th scope="col">Action</th>
+            
+          </tr>
+        </thead>
+        <tbody id="tableBody">
+          <tr>
+            <th scope="row">1</th>
+            <td>Math</td>
+            <td>4</td>
+            <td><button class="btn btn-sm btn-primary ">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+      <button class="btn btn-small btn-primary">Check</button>
+      </div>
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src ="index.js"></script>
+  </body>
+</html>
